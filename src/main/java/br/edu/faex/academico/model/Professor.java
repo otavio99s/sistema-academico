@@ -13,6 +13,10 @@ public class Professor {
         this.email = email;
     }
 
+    public void setId(Long id) {
+        this.id = id;
+    }
+
     public Long getId() {
         return id;
     }

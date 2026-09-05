@@ -14,4 +14,16 @@ public class AlunoRepository {
     public List<Aluno> listar(){
         return alunos;
     }
-}
+    public Aluno buscarPorId(long id){
+        for(Aluno aluno : alunos){
+            if (aluno.getId().equals(id)) {
+                return aluno;
+            }
+        }
+
+        return null;
+    }
+
+        }
+
+

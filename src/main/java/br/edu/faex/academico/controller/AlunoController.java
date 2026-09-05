@@ -15,7 +15,12 @@ public class AlunoController {
     public void cadastrar(Aluno aluno){
         this.service.cadastrar(aluno);
     }
+
     public List<Aluno> listar(){
         return this.service.listar();
+    }
+
+    public Aluno buscarPorId(Long id){
+        return this.service.buscarPorId(id);
     }
 }
